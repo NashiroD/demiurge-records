@@ -1,0 +1,242 @@
+/* Variables */
+:root {
+    --primario: #ffffff;
+    --secundario: #f8e600;
+    --terciario: #737373;
+    --negro: #252723;
+
+    --fuente: ;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Global */
+body {
+    background-color: var(--primario);
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+.borde {
+    margin: 0% 35%;
+    text-align: center;
+}
+p, h1, h2, h3 {
+    color: var(--negro);
+}
+a {
+    color: var(--negro);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.btn {
+    background-color: var(--secundario);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+}
+.btn:hover{
+    color: var(--primario);
+}
+/* Barra Navegación */
+.nav {
+    justify-content: space-between;
+    padding: 4rem 3rem 4rem 4rem;
+}
+.enlaces-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.enlaces-nav a{
+    margin: 0rem 0.8rem;
+}
+.enlaces-nav a:hover{
+    color:var(--terciario);
+}
+
+/* Encabezado */
+.encabezado img {
+    width: 100%;
+    height: 58rem;
+}
+
+.borde H1 {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+/* Servicios */
+.main {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 10rem 0rem;
+}
+.lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0rem 5rem;
+}
+.tarjeta {
+    border-style:groove;
+    border-radius: 1rem;
+    padding: 0rem 4rem 1rem 4rem;
+    margin: 1rem;
+}
+
+/* Proyectos */
+.proyectos {
+    text-align: center;
+    padding: 10rem 0rem;
+}
+.proyectos img {
+    width: 24.8%;
+    height: 24.8%;
+}
+
+/* Footer */
+.footer {
+    padding-top: 5rem;
+    background-color: #f8f8f8;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/*                                */
+/*                                */
+/*                                */
+/*                                */
+/*                                */
+/*         Sobre Nosotros         */
+
+.banner {
+    background-image: url(/img/ñe.jpg);
+    height: 20rem;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    color: var(--primario);
+}
+.descrip{
+    margin-top: 5rem;
+}
+.mv{
+    margin-top: 5rem;
+    background-color: #f8f8f8;
+    padding: 5rem 0rem;
+}
+/* S N */
+.borde-sn {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 0%;
+    text-align: center;
+}
+
+.sn-sn{
+    display: grid;
+    grid-template-columns: 2;
+}
+
+
+/* Imagenes */
+.slider {
+    border-radius: 2rem;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    grid-column: 2/3;
+  }
+  .slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 10s infinite;
+  }
+  .slider li{
+    width: 100%;
+    list-style: none;
+  }
+  .slider img{
+    border-radius: 2rem;
+    width: 90%;
+    height: 300px;
+  }
+  @keyframes cambio{
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+  
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+  
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+  
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
+  }
+
+/*                                */
+/*                                */
+/*                                */
+/*                                */
+/*                                */
+/*           Servicios            */
+
+.fotos{
+    margin-left: 23%;
+}
+
+.lista .card {
+   padding: 2rem;
+   background-color: #f0f0f0;
+}
+
+.borde-descrip {
+    margin:0 auto;
+}
+
+.borde-vid {
+    margin: 0% 19.8%;
+}
+.borde-vid-1 {
+    margin: 2.66% 19.8% 5% 19.8%;
+}
+
+.servicios {
+    margin: 15rem 5rem 5rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+}
+
+.capsulas {
+    margin:1rem 3rem;
+}
+
+.ultima {
+    grid-column: 2/3;
+    margin-bottom: 10rem;
+}
+
+/*Contacto*/
+.borde-c {
+    margin: 5rem 60rem 10rem 60rem;
+    border-radius: 2rem;
+}
+.sep-c{
+    padding: 1rem 0rem;
+}
+fieldset{
+    background-color: #f8f8f8;
+    border-radius: 2rem;
+    padding-bottom: 2rem;
+}
